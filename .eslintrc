@@ -1,0 +1,19 @@
+{
+    "extends": "eslint-config-egg",
+    "rules": {
+        // 空格4个
+        "indent": ["error", 4, {"SwitchCase": 1}],
+        // 指定数组的元素之间要以空格隔开(,后面)， never参数：[ 之前和 ] 之后不能带空格，always参数：[ 之前和 ] 之后必须带空格
+        "array-bracket-spacing": [2, "never"],
+        // if while function 后面的{必须与if在同一行，java风格。
+        "brace-style": [2, "1tbs", {"allowSingleLine": true}],
+        // 未用数据不提示
+        "no-unused-vars": 0,
+        // 链式调用是否强制换行
+        "newline-per-chained-call": 0,
+        // 换行风格
+        "linebreak-style": [0, "windows"],
+        // switch case中可以定义变量
+        "no-case-declarations": 0
+    }
+}
