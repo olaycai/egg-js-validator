@@ -38,6 +38,53 @@ exports.jsValidator = {
   enable: true,
   package: 'egg-js-validator',
 };
+
+// {app_root}/controller/xx.js
+module.exports = app => {
+
+    class MyController extends Controller {
+        async index(ctx) {
+            const rule = {
+                name: { type: 'string', required: true, min: 2 },
+                company: { type: 'string', required: true, min: 2 },
+            };
+            const validator = await app.jsValidator.convert(rule).setSelector('#base-form').build();
+            this.ctx.render('xx/xx.ejs', { validator });
+        }
+    }
+};
+
+// {app_root/views/xx.ejs}
+<%- baseJsValidator %>
+```
+
+## Template Dir
+/views/layout/validator_template.ejs
+@todo set template dir
+
+## Template content
+```text
+<script type="text/javascript">
+$(document).ready(function() {
+    $("<%= selector %>").validate({
+        rules: <%- JSON.stringify(rule) %>,
+        messages: <%- JSON.stringify(message) %>,
+        errorPlacement: function(error, element) {
+            $(element).addClass('is-invalid');
+            $(element).after(error);
+        },
+        errorClass: "invalid-feedback",
+        errorElement: "div",
+        highlight: false,
+        success: function(element) {
+            $(element).prev('input').removeClass('is-invalid');
+            $(element).remove();
+        },
+    });
+
+});
+
+</script>
 ```
 
 ## Configuration
