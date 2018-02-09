@@ -1,6 +1,6 @@
 {
   "name": "egg-js-validator",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "egg rule to jquery validate",
   "eggPlugin": {
     "name": "jsValidator"
@@ -37,7 +37,8 @@
   "files": [
     "app.js",
     "agent.js",
-    "config"
+    "config",
+    "lib/"
   ],
   "ci": {
     "version": "8, 9"
