@@ -44,12 +44,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-js-validator.git"
+    "url": "git+https://github.com/olaycai/egg-js-validator.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/olaycai/egg-js-validator/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-js-validator#readme",
+  "homepage": "https://github.com/olaycai/egg-js-validator#readme",
   "author": "olym",
-  "license": "MIT"
+  "license": "MIT",
+  "main": ".autod.conf.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
