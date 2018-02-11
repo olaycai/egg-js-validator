@@ -9,8 +9,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-js-validator.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-js-validator
-[travis-image]: https://img.shields.io/travis/eggjs/egg-js-validator.svg?style=flat-square
-[travis-url]: https://travis-ci.org/olaycai/egg-js-validator.svg?branch=master
+[travis-image]: https://travis-ci.org/olaycai/egg-js-validator.svg?branch=master
+[travis-url]: https://travis-ci.org/olaycai/egg-js-validator
 [codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-js-validator.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/eggjs/egg-js-validator?branch=master
 [david-image]: https://img.shields.io/david/eggjs/egg-js-validator.svg?style=flat-square
